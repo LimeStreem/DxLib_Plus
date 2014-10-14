@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30723.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DxLibPlusTest", "DxLibPlusTest\DxLibPlusTest.vcxproj", "{A5D46022-2FEF-400B-AC74-06424CE7B801}"
+	ProjectSection(ProjectDependencies) = postProject
+		{FFBF6D3B-FA5C-4339-863C-89210F74B782} = {FFBF6D3B-FA5C-4339-863C-89210F74B782}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DxLibPlus", "DxLibPlus\DxLibPlus.vcxproj", "{FFBF6D3B-FA5C-4339-863C-89210F74B782}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A5D46022-2FEF-400B-AC74-06424CE7B801}.Debug|Win32.ActiveCfg = Debug|Win32
+		{A5D46022-2FEF-400B-AC74-06424CE7B801}.Debug|Win32.Build.0 = Debug|Win32
+		{A5D46022-2FEF-400B-AC74-06424CE7B801}.Release|Win32.ActiveCfg = Release|Win32
+		{A5D46022-2FEF-400B-AC74-06424CE7B801}.Release|Win32.Build.0 = Release|Win32
+		{FFBF6D3B-FA5C-4339-863C-89210F74B782}.Debug|Win32.ActiveCfg = Debug|Win32
+		{FFBF6D3B-FA5C-4339-863C-89210F74B782}.Debug|Win32.Build.0 = Debug|Win32
+		{FFBF6D3B-FA5C-4339-863C-89210F74B782}.Release|Win32.ActiveCfg = Release|Win32
+		{FFBF6D3B-FA5C-4339-863C-89210F74B782}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
