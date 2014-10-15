@@ -5,6 +5,8 @@ class DxLibPlusObject
 public:
 	DxLibPlusObject();
 	~DxLibPlusObject();
-	std::string ToString();
+	virtual std::string ToString()const;
 };
 
+std::ostream& operator<<(std::ostream &stream, const DxLibPlusObject& val);
+std::ostream& operator<<(std::ostream &stream, const DxLibPlusObject* val);

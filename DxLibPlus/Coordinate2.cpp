@@ -16,7 +16,7 @@ AffineVector2 Coordinate2::ToAffine()
 	return AffineVector2(this->x, this->y, 1);
 }
 
-std::string Coordinate2::ToString()
+std::string Coordinate2::ToString()const
 {
 	return (boost::format("Coordinate2(%1%,%2%)[length:%3%]") % x %y %Length()).str();
 }

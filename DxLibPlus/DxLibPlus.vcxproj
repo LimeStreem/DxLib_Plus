@@ -85,6 +85,7 @@
     <ClCompile Include="AffineVector2.cpp" />
     <ClCompile Include="Coordinate2.cpp" />
     <ClCompile Include="Direction2.cpp" />
+    <ClCompile Include="DxDebug.cpp" />
     <ClCompile Include="DxLibPlusApplication.cpp" />
     <ClCompile Include="DxLibPlusObject.cpp" />
     <ClCompile Include="IAffineTransformable2D.cpp" />
@@ -102,6 +103,7 @@
     <ClInclude Include="AffineVector2.h" />
     <ClInclude Include="Coordinate2.h" />
     <ClInclude Include="Direction2.h" />
+    <ClInclude Include="DxDebug.h" />
     <ClInclude Include="DxLibPlus.h" />
     <ClInclude Include="DxLibPlusApplication.h" />
     <ClInclude Include="DxLibPlusObject.h" />

@@ -17,7 +17,7 @@ AffineVector2 Direction2::ToAffine()
 	return AffineVector2(this->x, this->y, 0);
 }
 
-std::string Direction2::ToString()
+std::string Direction2::ToString()const
 {
 	return (boost::format("Direction2(%1%,%2%)[length:%3%]") % x %y %Length()).str();
 }

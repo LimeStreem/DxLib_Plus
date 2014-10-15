@@ -8,6 +8,6 @@ public:
 	Coordinate2(float x,float y);
 	~Coordinate2();
 	AffineVector2 ToAffine();
-	std::string ToString();
+	virtual std::string ToString()const;
 };
 

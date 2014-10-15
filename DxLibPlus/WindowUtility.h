@@ -14,13 +14,13 @@ enum ScreenModeColorBit
 	COLOR_BIT_16=16,
 	COLOR_BIT_32=32
 };
-class ScreenMode:DxLibPlusObject
+class ScreenMode:public DxLibPlusObject
 {
 public:
 	int sizeX;
 	int sizeY;
 	int colorBit;
-	std::string ToString();
+	virtual std::string ToString()const;
 };
 class WindowUtility
 {

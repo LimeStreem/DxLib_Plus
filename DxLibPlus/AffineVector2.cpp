@@ -14,7 +14,7 @@ AffineVector2::~AffineVector2()
 {
 }
 
-std::string AffineVector2::ToString()
+std::string AffineVector2::ToString()const
 {
 	return (boost::format("AffineVector2(%1%,%2%,%3%)") % x%y%z).str();
 }

@@ -8,6 +8,6 @@ public:
 	Direction2(float x,float y);
 	~Direction2();
 	AffineVector2 ToAffine();
-	std::string ToString();
+	virtual std::string ToString()const;
 };
 

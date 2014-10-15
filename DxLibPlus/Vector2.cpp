@@ -21,18 +21,18 @@ Vector2::~Vector2()
 }
 
 
-float Vector2::Length()
+float Vector2::Length()const
 {
 	return sqrtf(LengthSquared());
 }
 
 
-float Vector2::LengthSquared()
+float Vector2::LengthSquared()const
 {
 	return x*x + y*y;
 }
 
-std::string Vector2::ToString()
+std::string Vector2::ToString()const
 {
 	return (boost::format("Vector2(%1%,%2%)[length:%3%]") % x %y %Length()).str();
 }

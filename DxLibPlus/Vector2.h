@@ -9,15 +9,15 @@ public:
 	~Vector2();
 	float x;
 	float y;
-	float Length();
-	float LengthSquared();
+	float Length()const;
+	float LengthSquared()const;
 	//TODO ŽÀ‘•‚æ‚ë‚µ‚­
 	float DotWith(Vector2 vec);
 	Vector2 AddWith(Vector2 v);
 	Vector2 SubtractWith(Vector2 v);
 	Vector2 ElementMulWith(Vector2 v);
 	//‚±‚±‚Ü‚Å
-	std::string ToString();
+	virtual  std::string ToString()const;
 
 	static Vector2 Add(Vector2 v1, Vector2 v2);
 	static Vector2 Subtract(Vector2 v1, Vector2 v2);

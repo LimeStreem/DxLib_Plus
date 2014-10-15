@@ -92,7 +92,7 @@ Matrix Matrix::MulScalar(float s)
 	return Matrix(GetAt(0, 0)*s, GetAt(0, 1)*s, GetAt(0, 2)*s, GetAt(1, 0)*s, GetAt(1, 1)*s, GetAt(1, 2)*s, GetAt(2, 0)*s, GetAt(2, 1)*s, GetAt(2, 2)*s);
 }
 
-std::string Matrix::ToString()
+std::string Matrix::ToString()const
 {
 	return (boost::format("Åu%1% %2% %3%íö\n|%4% %5% %6%|\nL%7% %8% %9%Åv") % GetAt(0, 0) % GetAt(0, 1) % GetAt(0, 2) % GetAt(1, 0) % GetAt(1, 1) % GetAt(1, 2) % GetAt(2, 0) % GetAt(2, 1) % GetAt(2, 2)).str();
 }

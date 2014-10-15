@@ -15,7 +15,7 @@ public:
 	Coordinate2 TransformCoordinate(Coordinate2 vec);
 	Direction2 TransformDirection(Direction2 vec);
 	AffineVector2 Transform(AffineVector2 avec);
-	std::string ToString();
+	virtual std::string ToString()const;
 	float Det();
 	float Tr();
 	bool IsSingularMatrix();
