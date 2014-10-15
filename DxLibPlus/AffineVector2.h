@@ -9,5 +9,6 @@ public:
 	float x;
 	float y;
 	float z;
+	std::string ToString();
 };
 
