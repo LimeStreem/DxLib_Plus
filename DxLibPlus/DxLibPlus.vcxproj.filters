@@ -54,6 +54,12 @@
     <ClCompile Include="Vector2.cpp">
       <Filter>ソース ファイル\Math</Filter>
     </ClCompile>
+    <ClCompile Include="WindowUtility.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="IDisposable.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="DxLibPlusObject.h">
@@ -94,6 +100,12 @@
     </ClInclude>
     <ClInclude Include="Vector2.h">
       <Filter>ヘッダー ファイル\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="WindowUtility.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="IDisposable.h">
+      <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

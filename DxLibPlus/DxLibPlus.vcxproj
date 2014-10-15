@@ -88,6 +88,7 @@
     <ClCompile Include="DxLibPlusApplication.cpp" />
     <ClCompile Include="DxLibPlusObject.cpp" />
     <ClCompile Include="IAffineTransformable2D.cpp" />
+    <ClCompile Include="IDisposable.cpp" />
     <ClCompile Include="MathDX.cpp" />
     <ClCompile Include="Matrix.cpp" />
     <ClCompile Include="stdafx.cpp">
@@ -95,6 +96,7 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
     </ClCompile>
     <ClCompile Include="Vector2.cpp" />
+    <ClCompile Include="WindowUtility.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AffineVector2.h" />
@@ -105,11 +107,13 @@
     <ClInclude Include="DxLibPlusObject.h" />
     <ClInclude Include="Header.h" />
     <ClInclude Include="IAffineTransformable2D.h" />
+    <ClInclude Include="IDisposable.h" />
     <ClInclude Include="MathDX.h" />
     <ClInclude Include="Matrix.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
     <ClInclude Include="Vector2.h" />
+    <ClInclude Include="WindowUtility.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

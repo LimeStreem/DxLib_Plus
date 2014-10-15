@@ -5,9 +5,15 @@ class DxLibPlusApplication :
 {
 public:
 	DxLibPlusApplication();
-	~DxLibPlusApplication();
+	virtual ~DxLibPlusApplication();
 	void Initialize();
+	void Finalize();
+	void RunMessageLoop();
+protected:
 	virtual void OnInitialize(); 
 	virtual void OnFinalize();
+	virtual void OnPrepareMessageLoop();
+	virtual void OnPostMessageLoop();
+	virtual bool ContinueMessageLoop();
 };
 
