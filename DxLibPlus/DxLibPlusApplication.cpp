@@ -1,7 +1,7 @@
 #include "stdafx.h"
 #include "DxLibPlusApplication.h"
 #include "WindowUtility.h"
-
+#include "DxDebug.h"
 DxLibPlusApplication::DxLibPlusApplication()
 {
 }
@@ -42,6 +42,7 @@ void DxLibPlusApplication::RunMessageLoop()
 		ClearDrawScreen();
 		OnPrepareMessageLoop();
 		OnPostMessageLoop();
+		DxDebug::Update();
 		ScreenFlip();
 	}
 }

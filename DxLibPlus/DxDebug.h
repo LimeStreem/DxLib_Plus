@@ -5,6 +5,10 @@ private:
 	DxDebug();
 	~DxDebug();
 public:
+	static bool IsDebugStreamAutoFlush;
+	static bool SuppressDebugStream;
+	static void Clear();
+	static void Update();
 };
 
 class DxDebugStreamBuffer :public std::streambuf
@@ -22,5 +26,4 @@ class DxDebugStream :public std::ostream
 public:
 	DxDebugStream();
 };
-
-extern DxDebugStream dout;
+extern DxDebugStream dxout;

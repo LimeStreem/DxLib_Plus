@@ -95,6 +95,11 @@ HRESULT WindowUtility::SetScreenMode(ScreenMode& state)
 	return SetGraphMode(state.sizeX, state.sizeY, state.colorBit) == DX_CHANGESCREEN_OK ? S_OK : E_FAIL;
 }
 
+HRESULT WindowUtility::SetWindowIconID(int id)
+{
+	return DxLib::SetWindowIconID(id) == 0 ? S_OK : E_FAIL;
+}
+
 std::string ScreenMode::ToString()const
 {
 	return (boost::format("ScreenMode[解像度(Resolution)=(%1% * %2%)][カラービット数=%3%]")%this->sizeX%this->sizeY%this->colorBit).str();

@@ -17,6 +17,5 @@ void TestApplication::OnInitialize()
 
 void TestApplication::OnPrepareMessageLoop()
 {
-	Vector2 vec = Vector2(2, 3);
-	dout << vec <<"\n"<< std::endl;
+	
 }

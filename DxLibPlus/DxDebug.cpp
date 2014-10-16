@@ -1,7 +1,8 @@
 #include "stdafx.h"
 #include "DxDebug.h"
 #include <iostream>
-DxDebugStream dout = DxDebugStream();
+#include <stdarg.h>
+DxDebugStream dxout = DxDebugStream();
 DxDebug::DxDebug()
 {
 }
@@ -9,9 +10,27 @@ DxDebug::DxDebug()
 
 DxDebug::~DxDebug()
 {
-	
 }
 
+void DxDebug::Clear()
+{
+	clsDx();
+}
+
+void DxDebug::Update()
+{
+	if (IsDebugStreamAutoFlush)
+	{
+		dout.flush();
+	}
+}
+
+bool DxDebug::IsDebugStreamAutoFlush = true;
+#ifdef _DEBUG
+bool DxDebug::SuppressDebugStream = false;
+#else
+bool DxDebug::SuppressDebugStream = true;
+#endif
 
 DxDebugStreamBuffer::DxDebugStreamBuffer()
 {
@@ -21,8 +40,7 @@ DxDebugStreamBuffer::DxDebugStreamBuffer()
 
 int DxDebugStreamBuffer::sync()
 {
-	*(pptr() - 1) = '\0';
-	printfDx("%s", buf);
+	if(!DxDebug::SuppressDebugStream)printfDx("%s", buf);
 	int offset = pptr() - pbase();
 	pbump(-offset);
 	return 0;
@@ -30,7 +48,7 @@ int DxDebugStreamBuffer::sync()
 
 int DxDebugStreamBuffer::overflow()
 {
-	printfDx("%s", buf);
+	if (!DxDebug::SuppressDebugStream)printfDx("%s", buf);
 	int offset = pptr() - pbase();
 	pbump(offset);
 	return 0;

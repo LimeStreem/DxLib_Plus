@@ -35,5 +35,6 @@ public:
 	static HRESULT SetScreenMode(ScreenMode& state);
 	static ScreenMode GetScreenMode();
 	static ScreenMode GetSafeScreenMode(ScreenModeResolution resolutionType,ScreenModeColorBit colorBit);
+	static HRESULT SetWindowIconID(int id);
 };
 
