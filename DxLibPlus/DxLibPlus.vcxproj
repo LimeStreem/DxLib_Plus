@@ -88,6 +88,7 @@
     <ClCompile Include="DxDebug.cpp" />
     <ClCompile Include="DxLibPlusApplication.cpp" />
     <ClCompile Include="DxLibPlusObject.cpp" />
+    <ClCompile Include="FPSManager.cpp" />
     <ClCompile Include="IAffineTransformable2D.cpp" />
     <ClCompile Include="IDisposable.cpp" />
     <ClCompile Include="MathDX.cpp" />
@@ -107,6 +108,7 @@
     <ClInclude Include="DxLibPlus.h" />
     <ClInclude Include="DxLibPlusApplication.h" />
     <ClInclude Include="DxLibPlusObject.h" />
+    <ClInclude Include="FPSManager.h" />
     <ClInclude Include="Header.h" />
     <ClInclude Include="IAffineTransformable2D.h" />
     <ClInclude Include="IDisposable.h" />

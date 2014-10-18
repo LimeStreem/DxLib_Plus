@@ -92,7 +92,7 @@ ScreenMode WindowUtility::GetScreenMode()
 
 HRESULT WindowUtility::SetScreenMode(ScreenMode& state)
 {
-	return SetGraphMode(state.sizeX, state.sizeY, state.colorBit) == DX_CHANGESCREEN_OK ? S_OK : E_FAIL;
+	return SetGraphMode(state.sizeX, state.sizeY, state.colorBit,30) == DX_CHANGESCREEN_OK ? S_OK : E_FAIL;
 }
 
 HRESULT WindowUtility::SetWindowIconID(int id)

@@ -18,5 +18,7 @@ public:
 	static float ArcCos(float v);
 	static float ArcTan(float v);
 	static float PI;
+	static float Max(float v1,float v2);
+	static float Min(float v1,float v2);
 };
 

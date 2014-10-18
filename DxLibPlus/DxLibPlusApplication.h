@@ -1,5 +1,6 @@
 #pragma once
 #include "DxLibPlusObject.h"
+#include "FPSManager.h"
 class DxLibPlusApplication :
 	public DxLibPlusObject
 {
@@ -9,6 +10,7 @@ public:
 	void Initialize();
 	void Finalize();
 	void RunMessageLoop();
+	FPSManager* fpsManager;
 protected:
 	virtual void OnInitialize(); 
 	virtual void OnFinalize();

@@ -7,8 +7,10 @@ private:
 public:
 	static bool IsDebugStreamAutoFlush;
 	static bool SuppressDebugStream;
+	static bool AutoClear;
 	static void Clear();
 	static void Update();
+	static void OnFrameUpdated();
 };
 
 class DxDebugStreamBuffer :public std::streambuf

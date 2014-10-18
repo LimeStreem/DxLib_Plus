@@ -57,4 +57,14 @@ float MathDX::ArcTan(float v)
 	return atan(v);
 }
 
+float MathDX::Max(float v1, float v2)
+{
+	return max(v1, v2);
+}
+
+float MathDX::Min(float v1, float v2)
+{
+	return min(v1, v2);
+}
+
 float MathDX::PI = 3.141592f;

@@ -1,5 +1,5 @@
 #pragma once
-#include "C:\Users\Lime\Documents\DxLib_Plus\DxLibPlus\DxLibPlusApplication.h"
+#include <DxLibPlusApplication.h>
 class TestApplication :
 	public DxLibPlusApplication
 {

@@ -21,11 +21,17 @@ void DxDebug::Update()
 {
 	if (IsDebugStreamAutoFlush)
 	{
-		dout.flush();
+		dxout.flush();
 	}
 }
 
+void DxDebug::OnFrameUpdated()
+{
+	if (AutoClear)Clear();
+}
+
 bool DxDebug::IsDebugStreamAutoFlush = true;
+bool DxDebug::AutoClear = true;
 #ifdef _DEBUG
 bool DxDebug::SuppressDebugStream = false;
 #else
