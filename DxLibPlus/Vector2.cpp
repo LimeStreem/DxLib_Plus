@@ -46,3 +46,38 @@ Vector2 Vector2::Subtract(Vector2 v1, Vector2 v2)
 {
 	return Vector2(v1.x - v2.x, v1.y - v2.y);
 }
+
+float Vector2::Dot(Vector2 v1, Vector2 v2)
+{
+	return v1.x*v2.x + v1.y*v2.y;
+}
+
+Vector2 Vector2::ElementMul(Vector2 v1, Vector2 v2)
+{
+	return Vector2(v1.x*v2.x, v1.y*v2.y);
+}
+
+float Vector2::DotWith(Vector2 vec)
+{
+	return Dot(*this, vec);
+}
+
+Vector2 Vector2::AddWith(Vector2 vec)
+{
+	return Add(*this, vec);
+}
+
+Vector2 Vector2::SubtractWith(Vector2 vec)
+{
+	return Subtract(*this, vec);
+}
+
+Vector2 Vector2::ElementMulWith(Vector2 vec)
+{
+	return ElementMul(*this, vec);
+}
+
+Vector2 Vector2::operator+(Vector2 vec)
+{
+	return Add(*this, vec);
+}

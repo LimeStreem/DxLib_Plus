@@ -39,7 +39,9 @@
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
-  <PropertyGroup />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);Z:\GIT\boost_1_57_0;</IncludePath>
+  </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <PrecompiledHeader>Use</PrecompiledHeader>
@@ -88,11 +90,13 @@
     <ClCompile Include="DxDebug.cpp" />
     <ClCompile Include="DxLibPlusApplication.cpp" />
     <ClCompile Include="DxLibPlusObject.cpp" />
+    <ClCompile Include="Entity.cpp" />
     <ClCompile Include="FPSManager.cpp" />
     <ClCompile Include="IAffineTransformable2D.cpp" />
     <ClCompile Include="IDisposable.cpp" />
     <ClCompile Include="MathDX.cpp" />
     <ClCompile Include="Matrix.cpp" />
+    <ClCompile Include="Scene.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
@@ -108,16 +112,21 @@
     <ClInclude Include="DxLibPlus.h" />
     <ClInclude Include="DxLibPlusApplication.h" />
     <ClInclude Include="DxLibPlusObject.h" />
+    <ClInclude Include="Entity.h" />
     <ClInclude Include="FPSManager.h" />
     <ClInclude Include="Header.h" />
     <ClInclude Include="IAffineTransformable2D.h" />
     <ClInclude Include="IDisposable.h" />
     <ClInclude Include="MathDX.h" />
     <ClInclude Include="Matrix.h" />
+    <ClInclude Include="Scene.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
     <ClInclude Include="Vector2.h" />
     <ClInclude Include="WindowUtility.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram.cd" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

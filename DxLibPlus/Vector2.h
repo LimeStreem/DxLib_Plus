@@ -11,7 +11,7 @@ public:
 	float y;
 	float Length()const;
 	float LengthSquared()const;
-	//TODO 実装よろしく
+	//TODO 実装よろしく->完了?
 	float DotWith(Vector2 vec);
 	Vector2 AddWith(Vector2 v);
 	Vector2 SubtractWith(Vector2 v);
@@ -28,6 +28,7 @@ public:
 	static Vector2 Bottom();
 	static Vector2 Left();
 	static Vector2 Right();
-	//+オペレーターの実装よろ
+	//+オペレーターの実装よろ->完了？
+	Vector2 operator +(Vector2 vec);
 };
 

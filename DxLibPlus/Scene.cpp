@@ -2,8 +2,9 @@
 #include "Scene.h"
 
 
-Scene::Scene()
+Scene::Scene(RECT* size)
 {
+	Size = size;
 }
 
 
