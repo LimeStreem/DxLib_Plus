@@ -9,11 +9,11 @@ public:
 	Entity();
 	~Entity();
 	void Draw();
+	void UpDate();
 	void UpDate(Entity* parent);
 	void SetParent(Entity parent);//eEntity‚Ìİ’è
+	int ZIndex;
 protected:
-	std::vector<int> _child;
-private :
-	int _zIndex;
+	std::vector<Entity> _child;
 };
 

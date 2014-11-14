@@ -15,11 +15,12 @@ public:
 	 void Draw();
 	 void AddEntity(Entity entity);
 	 RECT* Size;//描画領域
+	 Entity RootEntity;//Update開始点
 protected:
 	 virtual void OnUpdate();
 	 virtual void OnDraw();
 private:
 	int _id;
-	std::vector<int> _entityList;//このシーンのEntityの描画順ソート済みリスト。
+	std::vector<Entity> _entityList;//このシーンのEntityの描画順ソート済みリスト。
 };
 

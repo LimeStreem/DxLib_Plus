@@ -37,6 +37,8 @@ std::string Vector2::ToString()const
 	return (boost::format("Vector2(%1%,%2%)[length:%3%]") % x %y %Length()).str();
 }
 
+#pragma region Static
+
 Vector2 Vector2::Add(Vector2 v1, Vector2 v2)
 {
 	return Vector2(v1.x + v2.x, v1.y + v2.y);
@@ -56,6 +58,28 @@ Vector2 Vector2::ElementMul(Vector2 v1, Vector2 v2)
 {
 	return Vector2(v1.x*v2.x, v1.y*v2.y);
 }
+
+Vector2 Vector2::Top()
+{
+	return Vector2(0, 1);
+}
+
+Vector2 Vector2::Bottom()
+{
+	return Vector2(0, -1);
+}
+
+Vector2 Vector2::Right()
+{
+	return Vector2(1, 0);
+}
+
+Vector2 Vector2::Left()
+{
+	return Vector2(-1,0);
+}
+
+#pragma endregion
 
 float Vector2::DotWith(Vector2 vec)
 {

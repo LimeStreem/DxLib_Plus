@@ -21,7 +21,7 @@ public:
 
 	static Vector2 Add(Vector2 v1, Vector2 v2);
 	static Vector2 Subtract(Vector2 v1, Vector2 v2);
-	//TODO À‘•‚æ‚ë‚µ‚­
+	//TODO À‘•‚æ‚ë‚µ‚­->Š®—¹H
 	static float Dot(Vector2 v1, Vector2 v2);
 	static Vector2 ElementMul(Vector2 v1, Vector2 v2);
 	static Vector2 Top();
